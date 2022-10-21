@@ -1,0 +1,32 @@
+.text-homepage {
+  color: #E0BDB6;
+  font-family: cormorant upright, serif;
+  font-size: 60px;
+  line-height: 71px;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text-date {
+  color: #E0BDB6;
+  font-family: cormorant upright, serif;
+  font-size: 60px;
+  line-height: 71px;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-info:hover {
+  color: #E0BDB6;
+  cursor: pointer;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #E0BDB6;
+  border-radius: 50%;
+  display: inline-block;
+}

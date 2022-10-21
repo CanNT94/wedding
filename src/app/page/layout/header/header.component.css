@@ -1,0 +1,28 @@
+
+.mobile-header-navigation {
+  position: absolute;
+  display: none;
+  top: 127px;
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - 80px);
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 1024px){
+  .header-mobile {
+    justify-content: space-between !important;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .item-none {
+    display: none !important;
+  }
+}

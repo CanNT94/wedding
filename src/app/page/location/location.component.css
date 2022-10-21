@@ -1,0 +1,7 @@
+.location {
+  width: 100%;
+}
+
+::ng-deep .map-container {
+  width: 100% !important;
+}

@@ -1,0 +1,68 @@
+<div class="row m-3 pb-3 border-bottom">
+  <div class="col-5 d-none d-lg-flex p-0 my-auto justify-content-between">
+    <div class="d-flex">
+      <div class="brand-icon-header d-flex justify-content-center me-2" role="button">
+        <i class="bi bi-twitter"></i>
+      </div>
+      <div class="brand-icon-header d-flex justify-content-center me-2" role="button">
+        <i class="bi bi-facebook"></i>
+      </div>
+      <div class="brand-icon-header d-flex justify-content-center" role="button">
+        <i class="bi bi-instagram"></i>
+      </div>
+    </div>
+    <div class="d-flex my-auto">
+      <div class="nav-link me-4" role="button" routerLink="/">
+        Trang chủ
+      </div>
+      <div class="nav-link" role="button" routerLink="/images">
+        Ảnh cưới
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 p-0 d-flex justify-content-center header-mobile">
+    <div class="main-color my-auto item-none" style="width: 30px">
+      <i class="bi bi-house-heart fs-2" routerLink="/"></i>
+    </div>
+
+    <img src="assets/images/logo.jpg" height="86" alt="logo" class="rounded" routerLink="/" role="button">
+    <div style="width: 30px" class="main-color my-auto item-none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="11" viewBox="0 0 31.5 11" *ngIf="!expand" (click)="expand = true">
+        <g transform="translate(-8899.5 -3410)">
+          <path d="M0,0H31.5" transform="translate(8899.5 3420.5)" fill="none" stroke="currentColor" stroke-width="1"></path>
+          <path d="M0,0H31.5" transform="translate(8899.5 3410.5)" fill="none" stroke="currentColor" stroke-width="1"></path>
+        </g>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="14.828" viewBox="0 0 14.828 14.828" *ngIf="expand" (click)="expand = false">
+        <g transform="translate(-1884.086 -23.086)">
+          <line x1="12" y2="12" transform="translate(1885.5 24.5)" fill="none" stroke="#e0bdb6" stroke-linecap="round" stroke-width="2"></line>
+          <line x2="12" y2="12" transform="translate(1885.5 24.5)" fill="none" stroke="#e0bdb6" stroke-linecap="round" stroke-width="2"></line>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <nav class="mobile-header-navigation" [ngClass]="{'d-block' : expand}">
+    <div class="m-4">
+      <div class="nav-link" routerLink="/">Trang chủ</div>
+      <div class="nav-link" routerLink="/images">Ảnh cưới</div>
+      <div class="nav-link" routerLink="/time">Thời gian</div>
+      <div class="nav-link" routerLink="/location">Địa điểm</div>
+    </div>
+  </nav>
+    <div class="col-5 d-none d-lg-flex p-0 my-auto justify-content-between">
+      <div class="d-flex my-auto">
+        <div class="nav-link me-4" role="button" routerLink="/time">
+          Thời gian
+        </div>
+        <div class="nav-link" role="button" routerLink="/location">
+          Địa điểm
+        </div>
+      </div>
+      <div class="d-flex my-auto">
+        <a href="tel:0974165720" class="phone-header">
+          <i class="bi bi-telephone-fill me-2"></i>
+          <span>0974 165 720</span>
+        </a>
+      </div>
+  </div>
+</div>
