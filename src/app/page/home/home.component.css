@@ -30,3 +30,8 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+.upload-image:hover {
+  color: #E0BDB6;
+  cursor: pointer;
+}
