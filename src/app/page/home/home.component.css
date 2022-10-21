@@ -1,18 +1,18 @@
 .text-homepage {
   color: #E0BDB6;
   font-family: cormorant upright, serif;
-  font-size: 60px;
-  line-height: 71px;
+  font-size: 2.6rem;
+  line-height: 50px;
   letter-spacing: -0.04em;
   font-weight: 400;
   text-transform: uppercase;
 }
 .text-date {
-  color: #E0BDB6;
-  font-family: cormorant upright, serif;
-  font-size: 60px;
-  line-height: 71px;
-  letter-spacing: -0.04em;
+  color: #A28E84;
+  font-family: Rozha One, sans-serif;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
