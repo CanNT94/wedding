@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from "./page/home/home.component";
 import {LocationComponent} from "./page/location/location.component";
-import {PhotoLibraryComponent} from "./page/photo-libary/photo-library.component";
+import {PhotoLibraryComponent} from "./page/photo-library/photo-library.component";
 import {TimeComponent} from "./page/time/time.component"; // CLI imports router
 
 const routes: Routes = [

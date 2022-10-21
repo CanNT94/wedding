@@ -12,10 +12,11 @@
       </div>
     </div>
     <div class="d-flex my-auto">
-      <div class="nav-link me-4" role="button" routerLink="/">
+      <div class="nav-link me-4" role="button" routerLinkActive="active"
+           [routerLinkActiveOptions]={exact:true} routerLink="/">
         Trang chủ
       </div>
-      <div class="nav-link" role="button" routerLink="/images">
+      <div class="nav-link" role="button" routerLinkActive="active" routerLink="/images">
         Ảnh cưới
       </div>
     </div>
@@ -43,18 +44,19 @@
   </div>
   <nav class="mobile-header-navigation" [ngClass]="{'d-block' : expand}">
     <div class="m-4">
-      <div class="nav-link" routerLink="/">Trang chủ</div>
-      <div class="nav-link" routerLink="/images">Ảnh cưới</div>
-      <div class="nav-link" routerLink="/time">Thời gian</div>
-      <div class="nav-link" routerLink="/location">Địa điểm</div>
+      <div class="nav-link" routerLinkActive="active"
+           [routerLinkActiveOptions]={exact:true} routerLink="/">Trang chủ</div>
+      <div class="nav-link" routerLinkActive="active" routerLink="/images">Ảnh cưới</div>
+      <div class="nav-link" routerLinkActive="active" routerLink="/time">Thời gian</div>
+      <div class="nav-link" routerLinkActive="active" routerLink="/location">Địa điểm</div>
     </div>
   </nav>
     <div class="col-5 d-none d-lg-flex p-0 my-auto justify-content-between">
-      <div class="d-flex my-auto">
-        <div class="nav-link me-4" role="button" routerLink="/time">
+      <div class="d-flex my-auto" routerLinkActive="active">
+        <div class="nav-link me-4" role="button" routerLinkActive="active" routerLink="/time">
           Thời gian
         </div>
-        <div class="nav-link" role="button" routerLink="/location">
+        <div class="nav-link" role="button" routerLinkActive="active" routerLink="/location">
           Địa điểm
         </div>
       </div>

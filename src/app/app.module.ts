@@ -11,7 +11,7 @@ import {LocationComponent} from "./page/location/location.component";
 import {GoogleMapsModule} from "@angular/google-maps";
 import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 import {NgxScrollTopModule} from "ngx-scrolltop";
-import {PhotoLibraryComponent} from "./page/photo-libary/photo-library.component";
+import {PhotoLibraryComponent} from "./page/photo-library/photo-library.component";
 import {SwiperModule} from "swiper/angular";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
