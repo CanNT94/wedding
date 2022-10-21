@@ -30,8 +30,11 @@
       </div>
     </div>
     <div class="text-header mt-3"><i class="bi bi-map me-2"></i> <span class="main-color">Bản đồ</span></div>
-    <div *ngIf="apiLoaded | async" class="location mt-3" id="map_bride">
-      <google-map [options]="options"></google-map>
+    <div class="location mt-3">
+      <google-map [options]="options" #map_bride>
+        <map-marker [label]="{text: 'Nhà Gái', color: '#474747', fontWeight: 'bold', fontSize: '18px'}" [position]="{lat: 20.964623958230966, lng: 105.82886138441283}">
+        </map-marker>
+      </google-map>
     </div>
   </div>
   <div class="col-lg-6 mt-lg-0 mt-5">
@@ -44,7 +47,7 @@
     <div class="mt-4">
       <div class="text-header main-color">Địa chỉ:</div>
       <div>
-        <a target="_blank" class="phone-header" href="https://www.google.com/maps/place/20%C2%B047'49.1%22N+105%C2%B053'15.1%22E/@20.7969722,105.8869806,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x0:0xd905e802c03073f3!2zMjDCsDQ3JzQ5LjEiTiAxMDXCsDUzJzE1LjAiRQ!3b1!7e2!8m2!3d20.7969729!4d105.8875067!3m5!1s0x0:0xcf7fc3702e4edca1!7e2!8m2!3d20.7969611!4d105.887513">
+        <a target="_blank" class="phone-header" href="https://www.google.com/maps/place/20%C2%B047'49.1%22N+105%C2%B053'15.1%22E/@20.796947124649304,105.8875251176399,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x0:0xd905e802c03073f3!2zMjDCsDQ3JzQ5LjEiTiAxMDXCsDUzJzE1LjAiRQ!3b1!7e2!8m2!3d20.7969729!4d105.8875067!3m5!1s0x0:0xcf7fc3702e4edca1!7e2!8m2!3d20.7969611!4d105.887513">
           <i class="bi bi-house-heart me-2"></i>
           <span>An Định, Xã Tô Hiệu, Huyện Thường Tín, Hà Nội</span>
         </a>
@@ -65,8 +68,11 @@
       </div>
     </div>
     <div class="text-header mt-3"><i class="bi bi-map me-2"></i><span class="main-color">Bản đồ</span></div>
-    <div *ngIf="apiLoadedGroom | async" class="location mt-3" id="map_groom">
-      <google-map [options]="optionsGroom"></google-map>
+    <div class="location mt-3">
+      <google-map [options]="optionsGroom" #map_groom>
+        <map-marker [label]="{text: 'Nhà Trai', color: '#474747', fontWeight: 'bold', fontSize: '18px'}" [position]="{lat: 20.796947124649304, lng: 105.8875251176399}">
+        </map-marker>
+      </google-map>
     </div>
   </div>
 </div>
