@@ -47,6 +47,16 @@ body {
   word-wrap: break-word;
 }
 
+.text-link {
+  font-family: "Cormorant Upright",serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #E0BDB6;
+  font-size: 25px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
 .phone-header {
   text-decoration-line: none !important;
   color: #474747;
