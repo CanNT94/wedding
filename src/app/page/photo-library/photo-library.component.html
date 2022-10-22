@@ -1,6 +1,10 @@
 <!--<swiper-->
 <!--  style="&#45;&#45;swiper-navigation-color: #fff;&#45;&#45;swiper-pagination-color: #fff"-->
 <!--  [zoom]="true"-->
+<!--[autoplay]="{-->
+<!--delay: 5000,-->
+<!--disableOnInteraction: true-->
+<!--}"-->
 <!--  [navigation]="true"-->
 <!--  [thumbs]="{ swiper: thumbsSwiper }"-->
 <!--  [pagination]="{-->
@@ -17,17 +21,13 @@
 <swiper
   style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
   [loop]="true"
-  [autoplay]="{
-      delay: 5000,
-      disableOnInteraction: true
-    }"
   [spaceBetween]="10"
   [navigation]="true"
   [thumbs]="{ swiper: thumbsSwiper }"
   class="mySwiper2"
 >
   <ng-template swiperSlide *ngFor="let image of images">
-    <img [src]="image.src" [alt]="image.name" class="img-fluid" />
+    <img [src]="image.src" [alt]="image.name" class="img-fluid" loading="lazy" />
   </ng-template>
 </swiper>
 <swiper
@@ -40,6 +40,6 @@
   class="mySwiper"
 >
   <ng-template swiperSlide *ngFor="let image of images">
-    <img [src]="image.src" [alt]="image.name" class="img-fluid" />
+    <img [src]="image.src" [alt]="image.name" class="img-fluid" loading="lazy" />
   </ng-template>
 </swiper>
