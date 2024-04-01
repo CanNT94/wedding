@@ -22,15 +22,21 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   getTimeRemaining() {
     this.total = Date.parse(this.deadline.toString()) - Date.parse(new Date().toString());
-    const second = Math.floor((this.total / 1000) % 60);
-    this.second = second < 10 ? `0${second}` : `${second}`;
-    const minute = Math.floor((this.total / 1000 / 60) % 60);
-    this.minute = minute < 10 ? `0${minute}` : `${minute}`;
-    const hour = Math.floor((this.total / (1000 * 60 * 60)) % 24);
-    this.hour = hour < 10 ? `0${hour}` : `${hour}`;
-    const day = Math.floor(this.total / (1000 * 60 * 60 * 24));
-    this.day = day < 10 ? `0${day}` : `${day}`;
+    if(this.total >= 0) {
+      const second = Math.floor((this.total / 1000) % 60);
+      this.second = second < 10 ? `0${second}` : `${second}`;
+      const minute = Math.floor((this.total / 1000 / 60) % 60);
+      this.minute = minute < 10 ? `0${minute}` : `${minute}`;
+      const hour = Math.floor((this.total / (1000 * 60 * 60)) % 24);
+      this.hour = hour < 10 ? `0${hour}` : `${hour}`;
+      const day = Math.floor(this.total / (1000 * 60 * 60 * 24));
+      this.day = day < 10 ? `0${day}` : `${day}`;
+    }
     if (this.total < 0) {
+      this.second = '00';
+      this.minute = '00';
+      this.hour = '00';
+      this.day = '00';
       clearInterval(this.timeInterval)
     }
   }
